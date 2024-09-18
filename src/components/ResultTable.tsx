@@ -6,12 +6,15 @@ interface ResultTableProps {
 }
 
 const ResultTable: React.FC<ResultTableProps> = ({ result }) => {
-  if (result.error) {
-    return <div>{result.error}</div>;
-  }
-
   if (!result.data.length) {
-    return <div>No results found.</div>;
+    return (
+      <table>
+        <thead>
+          <tr> </tr>
+        </thead>
+        <tbody className="table-text-middle">No data</tbody>
+      </table>
+    );
   }
 
   return (

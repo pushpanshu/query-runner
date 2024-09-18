@@ -14,4 +14,8 @@ export interface User {
     data: User[] | Ticket[];
     error?: string;
   }
+
+  export interface LoggingProps {
+    queries: string[];
+  }
   

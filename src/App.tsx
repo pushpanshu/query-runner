@@ -33,7 +33,7 @@ const App: React.FC = () => {
 
   return (
     <div className="head-section">
-       <div className="content-center"><h4 className="m-0">JSON Data Query Editor</h4></div>
+       <div className="content-center"><h4 className="m-0">SQL Query on JSON Data </h4></div>
       <div className="main">
         <aside>
           <Logging queries={queries}/>

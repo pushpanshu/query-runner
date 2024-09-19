@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# SQL Query on JSON Data - React TypeScript App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application built with TypeScript that allows users to run SQL queries on JSON data. It provides a simple interface where users can input JSON data and run SQL-like queries to manipulate and retrieve information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Run SQL Queries**: Execute SQL-like queries on JSON data directly in the browser.
+- **Interactive Interface**: Users can input JSON data and write SQL queries through a user-friendly UI.
+- **Real-time Results**: The app returns query results instantly after executing.
+- **Built with TypeScript**: Leverages TypeScript for type safety and enhanced development experience.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Frontend framework for building the user interface.
+- **TypeScript**: Provides type safety and better code maintainability.
+- **98 CSS** (Optional): For styling the user interface.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Follow these instructions to get a local copy of the project up and running.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Make sure you have the following installed:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [Node.js](https://nodejs.org/) (version 14.x or above)
+- [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/))
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/pushpanshu/query-runner.git
+   cd query-runner
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+
+3. To start the development server:
+
+   ```bash
+   npm install
+   # or
+   yarn install

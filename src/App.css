@@ -12,6 +12,7 @@ button, table, textarea, ul.tree-view  {
 textarea {
   max-width: 546px;
   max-height: 300px;
+  min-height: 200px;
   width: 100%;
 }
 .head-section {
